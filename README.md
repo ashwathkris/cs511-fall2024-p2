@@ -4,7 +4,7 @@ Online Aggregation (OLA) is a technique that incrementally improves the query re
 ## Setup Instructions
 DeepOLA is implemented in Rust. The current implementation has been tested with `rustc 1.60.0`. You can install Rust using https://www.rust-lang.org/tools/install. Once you have Rust installed, follow the following instructions to setup the repository.
 - Clone the repository
-`git clone https://github.com/illinoisdata/cs511_p3template; cd DeepOLA/`
+`git clone https://github.com/illinoisdata/cs511-fall2024-p2; cd DeepOLA/`
 - Make sure the pre-generated TPC-H data is stored in `resources/tpc-h/data/` directory (`scale=1/partition=10/*.tbl` files).
 - To run the provided example queries, from `deepola/wake`, run `cargo run --release --example tpch_polars -- query q<query-no>`. Example: `cargo run --release --example tpch_polars -- query q1`.
 
