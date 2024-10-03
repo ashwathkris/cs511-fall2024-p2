@@ -2,11 +2,11 @@ SELECT
 	c_custkey,
 	c_name,
 	c_acctbal,
-	sum(l_extendedprice * (1 - l_discount)) AS revenue,
+	sum(l_extendedprice * (1 - l_discount)) AS revenue
 FROM
 	customer,
 	orders,
-	lineitem,
+	lineitem
 WHERE
 	c_custkey = o_custkey
 	AND l_orderkey = o_orderkey
@@ -15,6 +15,6 @@ WHERE
 GROUP BY
 	c_custkey,
 	c_name,
-	c_acctbal,
+	c_acctbal
 ORDER BY
 	revenue DESC;
